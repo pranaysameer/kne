@@ -21,12 +21,18 @@ data:
         {
           "name": "traffic-engine",
           "path": "ghcr.io/open-traffic-generator/ixia-c-traffic-engine",
-          "tag": "1.8.0.245"
+          "tag": "1.8.0.245",
+          "env": {
+            "ARG_CORE_LIST": "2 3 4 5 6 7"
+          }
         },
         {
           "name": "protocol-engine",
           "path": "ghcr.io/open-traffic-generator/ixia-c-protocol-engine",
           "tag": "1.00.0.457"
+          "env": {
+            "GOMAXPROCS": "16"
+          }
         },
         {
           "name": "ixhw-server",
